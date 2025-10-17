@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliação Diagnóstica - HTML, CSS e JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Avaliação Diagnóstica</h1>
+    <form id="quizForm">
+      <!-- Questões de múltipla escolha -->
+      <div class="question">
+        <p><strong>1.</strong> Qual a função da tag &lt;a&gt; no HTML?</p>
+        <label><input type="radio" name="q1" value="0" /> Aplicar estilos visuais</label>
+        <label><input type="radio" name="q1" value="0" /> Criar cabeçalhos</label>
+        <label><input type="radio" name="q1" value="1" /> Criar links clicáveis</label>
+        <label><input type="radio" name="q1" value="0" /> Inserir imagens</label>
+      </div>
+
+      <!-- Questão dissertativa -->
+      <div class="question">
+        <p><strong>2.</strong> Explique a importância da separação entre HTML, CSS e JavaScript:</p>
+        <textarea name="q2" rows="4" placeholder="Digite sua resposta aqui..."></textarea>
+      </div>
+
+      <!-- Outras questões podem ser adicionadas aqui seguindo o mesmo padrão -->
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
